@@ -1,2 +1,7 @@
 # website
 Open project my way. (Open Source Code)
+CSS 
+# CSS MİSTAKES
+CSS MAY NOT WORK SOMETIMES. YOU CAN USE AND INTEGRATE IT IN YOUR OWN PROJECT.
+
+
