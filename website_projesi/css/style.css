@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+background: white;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 8%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    animation: slideRight 1s ease forwards;
+}
+
+/* Navbar a*/
+
+.navbar a{
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin: 0 20px;
+    transition: .3s;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: rgb(105, 103, 103);
+}
+
+/* Social Media */
+
+.social-media {
+    width: 150px;
+    height: 40px;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    text-decoration: none;
+}
+
+.social-media a i {
+    font-size: 24px;
+    color: black;
+}
+
+.home{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 8% 0;
+    overflow: hidden;
+}
+
+.home-content {
+    max-width: 630px;
+}
+
+.home-content h1 {
+    font-size: 40px;
+    color: rgb(74, 184, 212);
+}
+
+.home-content p{
+    font-size: 16px;
+    margin: 15px 0 30px;
+}
+
+.button{
+    display: inline-block;
+    padding: 10px 28px;
+    background: rgb(0, 204, 255);
+    border: 2px solid rgb(0, 204, 255);
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgb(74, 184, 212);
+    font-size: 16px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .5s;
+}
+
+.button:hover{
+    background: transparent;
+    color: rgb(0, 204, 255);
+}
+
+/* Home İmg*/
+
+.home-img{
+    position: relative;
+    width: 450px;
+    height: 450px;
+}
+
+.home-img .car {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+}
+
+.home-img .car img{
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    max-width: 750px;
+    transform: rotate(0deg);
+}
+
+/* .home .car2{
+    position: absolute;
+    top: -25%;
+    right: -25%;
+    width: 700px;
+    height: 700px;
+    background: rgb(47, 110, 218);
+    transform: rotate(45deg)
+} */
+
+/* Keyframes */
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
